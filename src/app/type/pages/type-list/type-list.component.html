@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12 mt-2 mb-2">
+        <button class="btn btn-primary float-end" (click)="linkToItem()">Создать заметку</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-sm-12 p-2" *ngFor="let type of types">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ type.noteType }}</h5>
+                <div class="card-date">Создание: {{ type.dateCreateType }}</div>
+                <div class="card-date" *ngIf="type.dateEditType != null">Редактрирование: {{ type.dateEditType }}</div>
+                <button class="btn btn-primary btn-sm btn-block" type="button" (click)="linkToItem(type.id)">
+                    Редактировать
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>

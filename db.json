@@ -1,0 +1,52 @@
+{
+  "notes": [
+    {
+      "noteTitle": "Первая",
+      "noteText": "Первая пробная",
+      "noteType": "2",
+      "noteDate": "13.06.2021, 15:25:45",
+      "noteDateUpdate": null,
+      "id": 1
+    },
+    {
+      "noteTitle": "Вторая",
+      "noteText": "Вторая заметка",
+      "noteType": "4",
+      "noteDate": "13.06.2021, 15:26:01",
+      "noteDateUpdate": "13.06.2021, 15:32:28",
+      "id": 2
+    }
+  ],
+  "types": [
+    {
+      "noteType": "Покупки",
+      "dateCreateType": "13.06.2021, 14:45:09",
+      "dateEditType": null,
+      "id": 1
+    },
+    {
+      "noteType": "Напоминание",
+      "dateCreateType": "13.06.2021, 14:45:24",
+      "dateEditType": null,
+      "id": 2
+    },
+    {
+      "noteType": "Архив",
+      "dateCreateType": "13.06.2021, 14:45:32",
+      "dateEditType": null,
+      "id": 3
+    },
+    {
+      "noteType": "Важная дата",
+      "dateCreateType": "13.06.2021, 14:45:42",
+      "dateEditType": null,
+      "id": 4
+    },
+    {
+      "noteType": "1qфывфвыывф1",
+      "dateCreateType": "13.06.2021, 15:01:52",
+      "dateEditType": "13.06.2021, 15:38:07",
+      "id": 6
+    }
+  ]
+}

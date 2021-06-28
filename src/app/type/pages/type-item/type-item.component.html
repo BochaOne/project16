@@ -1,0 +1,37 @@
+<form [formGroup]="typeForm" (ngSubmit) = "onAddType()">
+    <div class="form-group">
+        <label for="title" class="control-label">Наименование типа заметки:</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="noteType" 
+            placeholder="Название" 
+            formControlName="noteType"
+            [ngClass]="{
+                'has-error':
+                    typeForm.get('noteType')!.invalid &&
+                    typeForm.get('noteType')!.touched
+            }"
+        >
+        <small class="form-text text-nuted">
+            Обязательное поле, длиной 50 символов
+        </small>
+    </div>
+    <div class="mt-2 mb-3">
+        <button 
+            class="btn btn-primary btn-lg btn-block me-2" 
+            type="submit" 
+            [disabled]="typeForm.invalid"
+        >
+            Добавить
+        </button>
+        <button 
+            class="btn btn-danger btn-lg btn-block " 
+            type="button" *ngIf="id" 
+            (click)="onDeleteType()"
+        >
+            Удалить
+        </button>
+    </div>
+
+</form>
